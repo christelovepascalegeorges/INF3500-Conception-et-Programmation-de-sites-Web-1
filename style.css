@@ -1,0 +1,241 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f7f7f7;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    min-height:700px;
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:50px;
+}
+
+/* ==========================
+   FORM SECTION
+========================== */
+
+.form-section{
+    flex:1;
+    max-width:430px;
+}
+
+.form-section h1{
+    font-size:2.4rem;
+    font-weight:600;
+    color:#333;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    color:#777;
+    font-size:0.95rem;
+    line-height:1.7;
+    margin-bottom:45px;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.form-group{
+    margin-bottom:30px;
+}
+
+.form-group label{
+    display:block;
+    font-size:0.85rem;
+    color:#777;
+    margin-bottom:8px;
+}
+
+.form-group input,
+.form-group select{
+
+    width:100%;
+
+    border:none;
+    border-bottom:1px solid #d8d8d8;
+
+    padding:10px 0;
+
+    font-size:1rem;
+
+    background:transparent;
+
+    outline:none;
+}
+
+/* Effet bleu comme dans l'image */
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-bottom:2px solid #8ed3ff;
+}
+
+/* Placeholder */
+
+::placeholder{
+    color:#444;
+}
+
+/* ==========================
+   CHECKBOX
+========================== */
+
+.checkbox-group{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:15px;
+    margin-bottom:35px;
+
+    font-size:0.8rem;
+
+    color:#999;
+}
+
+.checkbox-group a{
+
+    color:#7fcfff;
+    text-decoration:none;
+}
+
+.checkbox-group a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+
+    width:150px;
+    height:50px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#9ed8ff;
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.10);
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   IMAGE SECTION
+========================== */
+
+.image-section{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-section img{
+
+    width:100%;
+    max-width:500px;
+    height:auto;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 900px){
+
+    .container{
+
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .form-section{
+
+        max-width:100%;
+    }
+
+    .image-section img{
+
+        max-width:350px;
+    }
+
+    button{
+
+        width:100%;
+    }
+
+    .checkbox-group{
+
+        justify-content:center;
+    }
+}
+
+@media (max-width: 500px){
+
+    .container{
+        padding:30px;
+    }
+
+    .form-section h1{
+        font-size:1.9rem;
+    }
+
+    .subtitle{
+        font-size:0.9rem;
+    }
+}
